@@ -19,7 +19,7 @@
         <link rel="stylesheet" href="source/style/slick-theme.css">
         <link rel="stylesheet" href="source/style/buttons.css">
         <script type="text/javascript" src="source/js/slick.min.js"></script>
-        
+
         <link rel="shortcut icon" href="main-logo.svg" type="image/x-icon">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -183,6 +183,12 @@
                 .navbar-expand-lg .navbar-nav .nav-link {
                     color: rgb(0, 0, 0);
                 }
+              .form-btn-invert, .form-btn {
+                width: 120px;
+                padding: 10px;
+                margin-left: auto;
+                margin-bottom: 10px;
+              }
             }
 
             .carousel {
@@ -321,7 +327,7 @@
             }
 
             .product{
-                padding-top: 0;
+                padding-top: 64px;
             }
             .product-grid-item {
                 display: flex;
@@ -444,7 +450,10 @@
                 .team-box {
                     max-width: 220px;
                     max-height: 220px;
-                } 
+                }
+              .product {
+                padding-top: 130px;
+              }
             }
 
             .team-avatar-fill {
@@ -935,7 +944,7 @@
               position: fixed;
               row-gap: 20px;
               top: 0;
-              z-index: 1000
+              z-index: 9999;
             }
 
             .NFjN,.srRf {
@@ -951,7 +960,7 @@
 
             .srRf .bb7p {
               align-items: center;
-              background-color: #f6fcff;
+              background-color: #fff;
               border-radius: 12px;
               display: flex;
               height: 100%;
@@ -1003,12 +1012,13 @@
             }
 
             .srRf .V6yW {
-              background: linear-gradient(270deg,#1543f5,#0ad1f0);
+              background: linear-gradient(270deg, #da3535, #6203b0);
               -webkit-background-clip: text;
               font-size: 28px;
               font-weight: 600;
-              line-height: 32px;
-              -webkit-text-fill-color: transparent
+              line-height: 44px;
+              -webkit-text-fill-color: transparent;
+              margin-bottom: 0;
             }
 
             .srRf .nMBZ {
@@ -1034,10 +1044,32 @@
               line-height: 16px;
               padding: 10px 20px
             }
-
+            .TMB4 {
+              background: linear-gradient(270deg, #da3535, #6203b0);
+              align-items: center;
+              border: none;
+              border-radius: 8px;
+              color: #f6fcff;
+              cursor: pointer;
+              display: flex;
+              font-size: 20px;
+              font-weight: 600;
+              justify-content: center;
+              line-height: 28px;
+              overflow: hidden;
+              padding: 12px 28px;
+              text-align: center;
+              width: 100%;
+            }
             @media (max-width: 768px) {
               .srRf .bb7p {
                 padding:35px 20px
+              }
+              .VKnW {
+                gap: 20px;
+              }
+              .XdCq {
+                flex-direction: column;
               }
             }
 
@@ -1051,7 +1083,7 @@
               position: fixed;
               row-gap: 20px;
               top: 0;
-              z-index: 1000
+              z-index: 9999;
             }
 
             .TZEF,.fP2V {
@@ -1119,11 +1151,12 @@
             }
 
             .TZEF .cKBe {
-              background: linear-gradient(270deg,#1543f5,#0ad1f0);
+              background: linear-gradient(270deg, #da3535, #6203b0);
               -webkit-background-clip: text;
               font-size: 28px;
               font-weight: 600;
-              line-height: 32px;
+              line-height: 44px;
+              margin-bottom: 0;
               -webkit-text-fill-color: transparent
             }
 
@@ -1195,10 +1228,10 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="./#contact-footer">Contactpersonen</a>
                             </li>
-                            <li class="nav-item form-btn">
+                            <li class="nav-item form-btn login">
                                 <button class="nav-link">Inloggen</button>
                             </li>
-                            <li class="nav-item form-btn-invert">
+                            <li class="nav-item form-btn-invert registr">
                                 <button class="nav-link"><span>Registreren</span></button>
                             </li>
                         </ul>
@@ -1295,18 +1328,18 @@
                         </div>
                     </div>
                 </div>
-                <div class="vIK9">
-                    <div class="G0qP">
-                        <img src="/static/images/18.svg" alt="age 18+" class="Ep7P">
-                        <p style="margin-bottom: 0">Vergeet niet om verantwoord te spelen. De richtlijnen vind je op onze <a
-                                href="agreement.html">pagina</a>.</p></div>
-                </div>
             </div>
         </section>
 
         <section class="product sale__contentst">
             <div class="container">
                 <div class="product-box">
+                    <div class="vIK9">
+                        <div class="G0qP">
+                            <img src="/static/images/18.svg" alt="age 18+" class="Ep7P">
+                            <p style="margin-bottom: 0">Vergeet niet om verantwoord te spelen. De richtlijnen vind je op onze <a
+                                    href="agreement.html">pagina</a>.</p></div>
+                    </div>
                     <div class="row flex-row product-row">
                         <div class="col-lg-6 product-grid-item">
                             <div class="product-pic-wrapper">
@@ -1560,42 +1593,108 @@
             </div>
         </section>
 
-        <div class="NFjN">
-            <div class="srRf">
-                <div class="bb7p">
-                    <button class="EBpC" type="button"></button>
-                    <form>
-                        <div class="O6TT">
-                            <div class="zrsA"><h2 class="V6yW">Inloggen</h2>
-                                <p class="nMBZ">Meld je aan bij je account en ga meteen verder met spelen. Je favoriete
-                                    spellen wachten op je!</p></div>
-                            <div class="ay0y"><input type="text" placeholder="Name" name="name" value=""><input
-                                    type="email" placeholder="Enter e-mail" name="email" value="">
-                                <button type="submit" class="TMB4"><span class="uysw">Inloggen</span></button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-        <div class="fP2V">
-            <div class="TZEF">
-                <div class="K7A4">
-                    <button class="HdQO" type="button"></button>
-                    <form>
-                        <div class="R0rv">
-                            <div class="d0lb"><h2 class="cKBe">Registreren</h2>
-                                <p class="NZPD">Maak binnen een paar minuten een account aan en ontdek de spannende
-                                    wereld van ons casino. Het is eenvoudig, snel en veilig!</p></div>
-                            <div class="JAsE"><input type="text" placeholder="Name" name="name" value=""><input
-                                    type="email" placeholder="Enter e-mail" name="email" value="">
-                                <button type="submit" class="TMB4"><span class="uysw">Inloggen</span></button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
+        <script>
+            document.querySelector('.login').addEventListener('click', function() {
+                const newElement = document.createElement('div');
+                newElement.innerHTML = ' <div class="NFjN">\n' +
+                    '            <div class="srRf">\n' +
+                    '                <div class="bb7p">\n' +
+                    '                    <button class="EBpC" type="button"></button>\n' +
+                    '                    <form id="loginForm">\n' +
+                    '                        <div class="O6TT">\n' +
+                    '                            <div class="zrsA"><h2 class="V6yW">Inloggen</h2>\n' +
+                    '                                <p class="nMBZ">Meld je aan bij je account en ga meteen verder met spelen. Je favoriete\n' +
+                    '                                    spellen wachten op je!</p></div>\n' +
+                    '                            <div class="ay0y"><input type="text" placeholder="Name" name="name" value=""><input\n' +
+                    '                                    type="email" placeholder="Enter e-mail" name="email" value="">\n' +
+                    '                                <button type="submit" class="TMB4"><span>Inloggen</span></button>\n' +
+                    '                            </div>\n' +
+                    '                        </div>\n' +
+                    '                    </form>\n' +
+                    '                </div>\n' +
+                    '            </div>\n' +
+                    '        </div>';
+                document.querySelector('.footer').insertAdjacentElement('afterend', newElement);
+                document.querySelector('.EBpC').addEventListener('click', function() {
+                    const newContent = document.querySelector('.NFjN');
+                    if (newContent) {
+                        newContent.remove();
+                    }
+                });
+                document.querySelector('#loginForm').addEventListener('submit', function(event) {
+                    const nameField = document.querySelector('input[name="name"]');
+                    const emailField = document.querySelector('input[name="email"]');
+                    const nameInput = nameField.value.trim();
+                    const emailInput = emailField.value.trim();
+
+                    const namePattern = /^[A-Za-z]+$/;
+                    const emailPattern = /^[\w-.]+@([\w-]+\.)+[a-zA-Z]{2,7}$/;
+
+                    if (!namePattern.test(nameInput)) {
+                        event.preventDefault();
+                        nameField.focus();
+                        return;
+                    }
+
+                    if (!emailPattern.test(emailInput)) {
+                        event.preventDefault();
+                        emailField.focus();
+                        return;
+                    }
+                })
+            });
+
+            document.querySelector('.registr').addEventListener('click', function() {
+                const newElement = document.createElement('div');
+                newElement.innerHTML = '<div class="fP2V">\n' +
+                    '            <div class="TZEF">\n' +
+                    '                <div class="K7A4">\n' +
+                    '                    <button class="HdQO" type="button"></button>\n' +
+                    '                    <form id="regForm">\n' +
+                    '                        <div class="R0rv">\n' +
+                    '                            <div class="d0lb"><h2 class="cKBe">Registreren</h2>\n' +
+                    '                                <p class="NZPD">Maak binnen een paar minuten een account aan en ontdek de spannende\n' +
+                    '                                    wereld van ons casino. Het is eenvoudig, snel en veilig!</p></div>\n' +
+                    '                            <div class="JAsE"><input type="text" placeholder="Name" name="name" value=""><input\n' +
+                    '                                    type="email" placeholder="Enter e-mail" name="email" value="">\n' +
+                    '                                <button type="submit" class="TMB4"><span class="uysw">Inloggen</span></button>\n' +
+                    '                            </div>\n' +
+                    '                        </div>\n' +
+                    '                    </form>\n' +
+                    '                </div>\n' +
+                    '            </div>\n' +
+                    '        </div>';
+                document.querySelector('.footer').insertAdjacentElement('afterend', newElement);
+                document.querySelector('.HdQO').addEventListener('click', function() {
+                    const newContent = document.querySelector('.fP2V');
+                    if (newContent) {
+                        newContent.remove();
+                    }
+                });
+                document.querySelector('#regForm').addEventListener('submit', function(event) {
+                    const nameField = document.querySelector('input[name="name"]');
+                    const emailField = document.querySelector('input[name="email"]');
+                    const nameInput = nameField.value.trim();
+                    const emailInput = emailField.value.trim();
+
+                    const namePattern = /^[A-Za-z]+$/;
+                    const emailPattern = /^[\w-.]+@([\w-]+\.)+[a-zA-Z]{2,7}$/;
+
+                    if (!namePattern.test(nameInput)) {
+                        event.preventDefault();
+                        nameField.focus();
+                        return;
+                    }
+
+                    if (!emailPattern.test(emailInput)) {
+                        event.preventDefault();
+                        emailField.focus();
+                        return;
+                    }
+                })
+            });
+
+        </script>
 
         <script>
         document.addEventListener("DOMContentLoaded", function() {
